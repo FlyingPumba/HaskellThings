@@ -65,9 +65,7 @@ aux :: Float -> Float -> Float -> Float
 aux a b c = sqrt( b ^ 2 - 4*a*c )
 
 esPrimo :: Int -> Bool
-esPrimo y = length [ x | x <- [1..y], (mod y x) == 0 ] <= 2
-
-sumauno :: Int -> Int
-sumauno = 
+esPrimo y = length [ x | x <- [ 1..y ], ( mod y x ) == 0 ] <= 2
+ 
 
 
