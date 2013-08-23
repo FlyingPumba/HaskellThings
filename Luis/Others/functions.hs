@@ -65,3 +65,11 @@ b = not ( 15 > 40 )
 c :: [ Int ]
 
 c = [ 0 ] -- c = 0 : No es interpretado : error.
+
+-------------------------------
+
+{-
+
+	Integer: http://stackoverflow.com/questions/3429291/haskell-int-and-integer
+
+-}
