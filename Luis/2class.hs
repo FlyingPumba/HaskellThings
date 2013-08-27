@@ -30,6 +30,10 @@ signo x | x < 0 = -1
 factorial :: Int -> Int -- 50 : desborda
 factorial x = product [ 1..x ]
 
+factorialPorRecursion :: Integer -> Integer -- Al 17 desborda con Int, con Integer hasta 10000 lo hace bien, si se agrega un cero más tarda en procesamiento dependiendo del procesador.
+factorialPorRecursion 0 = 1;
+factorialPorRecursion x = x * factorialPorRecursion ( x - 1 )
+
 signoIf :: Int -> [ Char ]
 signoIf x = if x < 0 then "Negativo" else "Positivo"
 
