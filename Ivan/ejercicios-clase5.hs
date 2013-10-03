@@ -1,0 +1,6 @@
+imparesHastaN :: Int -> [Int]
+imparesHastaN 0 = []
+imparesHastaN 1 = [1]
+imparesHastaN 2 = [1]
+imparesHastaN n | mod n 2 == 0 = imparesHastaN (n-3)++[n-1]
+		| otherwise = imparesHastaN (n-2)++[n]
