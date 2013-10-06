@@ -28,3 +28,9 @@ base10lista n (x:xs) = convertirALista(base10 n (x:xs))
 convertirALista :: Integer -> [Integer]
 convertirALista 0 = []
 convertirALista n = (convertirALista (div n 10))++[mod n 10]
+
+base10aR :: Integer -> Integer -> [Integer]
+base10aR 0 r = []
+base10aR n r | n < 0 = base10aR (-n) r
+			 | otherwise = (base10aR cociente r)++[resto]
+	where resto = mod n r; cociente = div n r
